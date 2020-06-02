@@ -1,9 +1,8 @@
 require './lib/bookmark'
 
 describe Bookmark do
-  describe '.all' do
+  context '.all' do
     it 'allows a user to view their bookmarks' do
-      # expect(subject).to respond_to(:all)
       bookmarks = Bookmark.all
 
       expect(bookmarks).to include ('www.bbc.co.uk')
