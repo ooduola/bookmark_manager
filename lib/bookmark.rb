@@ -1,10 +1,18 @@
+require 'pg'
+
 class Bookmark
 
   def self.all
-    [
-      'www.bbc.co.uk',
-      'www.skysports.co.uk',
-      'https://makers.tech/'
-    ]
+    con = PG.connect( dbname: 'bookmark_manager' )
+    list = []
+    con.exec( "SELECT url FROM bookmarks" ) do |results|
+      results.each do |row|
+        list << row["url"]
+      end
+    end
+
+    con.close if con
+
+    list
   end
 end
