@@ -1,3 +1,5 @@
+require_relative 'helper'
+
 feature 'viewing bookmarks' do
   scenario 'visiting the index page' do
     visit '/'
@@ -5,6 +7,8 @@ feature 'viewing bookmarks' do
   end
 
     scenario 'A user can view their bookmarks' do
+      truncate
+      fill_up_data
       visit '/bookmarks'
       expect(page).to have_content 'http://www.makersacademy.com'
       expect(page).to have_content 'http://www.destroyallsoftware.com'

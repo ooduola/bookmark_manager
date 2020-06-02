@@ -1,5 +1,4 @@
 ENV['RACK_ENV'] = 'test'
-ENV['rspec'] = "yes"
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
