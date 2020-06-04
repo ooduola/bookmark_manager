@@ -11,9 +11,11 @@ feature 'Adding a new bookmark to the database' do
     visit '/bookmarks/new'
   
     fill_in('url', with: 'www.techpoint.africa')
+    fill_in('title', with: 'test')
     click_button('Save')
 
     expect(page).to have_content 'www.techpoint.africa'
+    expect(page).to have_content 'test'
   end
 
 end

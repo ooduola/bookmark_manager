@@ -12,8 +12,8 @@ def fill_up_data
 
   con = PG.connect( dbname: 'bookmark_manager_test' )
   
-  con.exec("INSERT INTO bookmarks(url) VALUES('http://www.makersacademy.com'), 
-  ('http://www.destroyallsoftware.com'),('http://www.google.com')" )
+  con.exec("INSERT INTO bookmarks(url,title) VALUES('http://www.makersacademy.com', 'Makers'), 
+  ('http://www.destroyallsoftware.com', 'DAS'),('http://www.google.com', 'Google')" )
 
   con.close if con
 

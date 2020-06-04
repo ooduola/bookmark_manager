@@ -17,7 +17,7 @@ describe Bookmark do
 
   context '.create' do
     it 'stores new websites into Bookmark Manager' do
-      Bookmark.create({url: "www.techpoint.africa"})
+      Bookmark.create("www.techpoint.africa", "title")
       expect(Bookmark.all).to include("www.techpoint.africa")
     end
   end
