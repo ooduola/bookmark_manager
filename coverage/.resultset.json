@@ -7,12 +7,20 @@
           1,
           null,
           1,
+          null,
           1,
           1,
           1,
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
           1,
           1,
           1,
@@ -45,6 +53,29 @@
           null
         ]
       },
+      "/Users/ola/Projects/week-4/bookmark_manager/spec/features/add_bookmark_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/ola/Projects/week-4/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
           1,
@@ -67,6 +98,6 @@
         ]
       }
     },
-    "timestamp": 1591116282
+    "timestamp": 1591266580
   }
 }
