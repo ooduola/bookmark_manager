@@ -22,4 +22,14 @@ describe Bookmark do
       expect(bookmark.title).to eq 'title'
     end
   end
+
+  describe '.delete' do
+    it 'Should delete bookmarks using .delete' do
+      Bookmark.create("www.techpoint.africa", "title")
+      Bookmark.create("www.google.com", "google")
+      Bookmark.delete('google')
+      bookmark = Bookmark.all.last
+      expect(bookmark.title).to eq('title')
+    end
+  end
 end
