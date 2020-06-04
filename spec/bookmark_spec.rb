@@ -3,16 +3,15 @@ require_relative './helper.rb'
 
 describe Bookmark do
 
-  # context '.all' do
-  #   it 'allows a user to view their bookmarks' do
-  #     fill_up_data
-  #     bookmarks = Bookmark.all
+  context '.all' do
+    it 'allows a user to view their bookmarks' do
+      fill_up_data
+      bookmarks = Bookmark.all
       
-  #     expect(bookmarks).to include (['http://www.makersacademy.com', 'Makers'])
-  #     expect(bookmarks).to include (['http://www.destroyallsoftware.com', 'DAS'])
-  #     expect(bookmarks).to include (['http://www.google.com', 'Google'])
-  #   end
-  # end
+      expect(bookmarks.length).to eq(3)
+      expect(bookmarks.first).to be_instance_of(Bookmark)
+    end
+  end
 
   context '.create' do
     it 'stores new websites into Bookmark Manager' do
