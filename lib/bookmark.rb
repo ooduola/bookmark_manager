@@ -13,7 +13,7 @@ class Bookmark
     result = con.exec( "SELECT url, title FROM bookmarks" ) 
     
     result.map do |row| 
-      p row["url"], row["title"] 
+      p [row["url"], row["title"]] 
     end
   end
 
