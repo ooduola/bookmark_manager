@@ -1,4 +1,4 @@
-require_relative 'helper'
+require './spec/helper.rb'
 
 feature 'viewing bookmarks' do
   scenario 'visiting the index page' do
@@ -7,11 +7,12 @@ feature 'viewing bookmarks' do
   end
 
     scenario 'A user can view their bookmarks' do
-      truncate
       fill_up_data
       visit '/bookmarks'
-      expect(page).to have_content 'http://www.makersacademy.com'
-      expect(page).to have_content 'http://www.destroyallsoftware.com'
-      expect(page).to have_content 'http://www.google.com'
+      expect(page).to have_content 'Makers'
+      expect(page).to have_content 'DAS'
+      expect(page).to have_content 'Google'
+
+      
     end
   end

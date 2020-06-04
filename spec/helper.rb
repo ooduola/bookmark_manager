@@ -1,4 +1,5 @@
 require 'pg'
+p "clearing database.."
 
 def truncate
   con = PG.connect( dbname: 'bookmark_manager_test' )

@@ -14,8 +14,7 @@ feature 'Adding a new bookmark to the database' do
     fill_in('title', with: 'test')
     click_button('Save')
 
-    expect(page).to have_content 'www.techpoint.africa'
-    expect(page).to have_content 'test'
+    expect(page).to have_link 'test', href: 'www.techpoint.africa'
   end
 
 end

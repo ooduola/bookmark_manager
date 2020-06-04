@@ -1,60 +1,16 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/chriscooney/projects/makers/Week_4/bookmark_manager/spec/bookmark_spec.rb": {
+      "/Users/ola/Projects/week-4/bookmark_manager/spec/bookmark_spec.rb": {
         "lines": [
           1,
           1,
           null,
           1,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
           null,
           null,
           null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/chriscooney/projects/makers/Week_4/bookmark_manager/spec/features/helper.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          2,
-          null,
-          2,
-          null,
-          2,
-          null,
-          null,
-          1,
-          null,
-          2,
-          null,
-          2,
-          null,
-          null,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/chriscooney/projects/makers/Week_4/bookmark_manager/spec/features/add_bookmark_spec.rb": {
-        "lines": [
           null,
           null,
           null,
@@ -64,9 +20,6 @@
           null,
           null,
           1,
-          1,
-          1,
-          null,
           1,
           1,
           1,
@@ -78,7 +31,31 @@
           null
         ]
       },
-      "/Users/chriscooney/projects/makers/Week_4/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": {
+      "/Users/ola/Projects/week-4/bookmark_manager/spec/features/add_bookmark_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ola/Projects/week-4/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
           1,
           null,
@@ -94,12 +71,13 @@
           1,
           1,
           1,
-          1,
+          null,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1591281528
+    "timestamp": 1591287572
   }
 }

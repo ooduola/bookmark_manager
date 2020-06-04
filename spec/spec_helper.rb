@@ -1,3 +1,5 @@
+require_relative './helper.rb'
+
 ENV['RACK_ENV'] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
@@ -34,6 +36,9 @@ SimpleCov.start
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  config.before(:each) do
+    truncate
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

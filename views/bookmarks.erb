@@ -1,8 +1,5 @@
 <ul>
   <% @bookmarks.each do |bookmark| %>
-      <% bookmark.each do |url, title| %>
-       <li><%= url %> <%= title %></li>
-      <% end %>
-     <% end %>
+       <a href="<%= bookmark.url %>"><li><%= bookmark.title %></li></a>
+  <% end %>
 </ul>
-
